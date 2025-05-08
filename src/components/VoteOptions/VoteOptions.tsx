@@ -8,9 +8,9 @@ export interface VoteOptionsProps {
 }
 
 export default function VoteOptions({
-  onVote = () => {},
-  onReset = () => {},
-  canReset = true,
+  onVote,
+  onReset,
+  canReset,
 }: VoteOptionsProps) {
   return (
     <div className={css.container}>
